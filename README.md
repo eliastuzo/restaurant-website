@@ -30,7 +30,7 @@ A modern, mobile-friendly website built for Espresso Central to serve as a digit
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP (with embedded HTML)
 - **Database:** MySQL
-- **Deployment:** [selisar.com](https://www.selisar.com)
+- **Deployment:** [espressocentral.mx](https://www.espressocentral.mx)
 
 ---
 
