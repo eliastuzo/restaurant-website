@@ -1,0 +1,478 @@
+:root {
+    --primario: #ffbd00;
+    --blanco: white;
+    --negro: black;
+    --fontPrincipal: 'Futura Extra Black Condensed Regular';
+    --fontPrincipalAlternativo: 'Futura Condensed Bold';
+    --fontCursiva: 'SignPainter HouseScript Regular'
+}
+
+@font-face {
+    font-family: 'Futura Condensed Bold';
+    src: url('Futura\ Condensed\ Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Extra Black Condensed Regular';
+    src: url('Futura\ Extra\ Black\ Condensed\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SignPainter HouseScript Regular';
+    src: url('SignPainter\ HouseScript\ Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box; /*permite trabajar con tamaños exactos sin batallar con padding*/
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after { 
+    box-sizing: inherit;
+}
+
+h1 {
+    font-family: var(--fontPrincipal);
+    font-size: 3.8rem;
+    text-transform:uppercase;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: var(--fontPrincipal);
+}
+
+p {
+    margin: 0;
+    font-family: var(--fontPrincipal);
+}
+
+.header {
+    background-color: var(--primario);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    overflow: hidden;
+}
+
+.header__logo {
+    height: 180px;
+    margin-left: 3rem;
+}
+
+.enlaces {
+    max-width: 60%;
+}
+
+.enlace {
+    padding: 1.5rem;
+    font-family: var(--fontPrincipal);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.enlace__activo {
+    color: var(--blanco);
+}
+
+.enlace:hover {
+    color: var(--blanco)
+}
+
+.section {
+    height: auto;
+}
+
+.section h1{
+    margin-bottom: 4.5rem;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.item {
+    width: 25%;
+    background-color:#f3f2f3;
+    border-radius: 20px;
+    padding: 1.2rem 1.5rem;
+    position: relative;
+    min-height: 300px;
+}
+
+.item__img {
+    width: 50%;
+    position: absolute;
+    left: 170px;
+    top: -60;
+}
+
+.item__datos {
+    width: 40%;
+    margin: 25% 0 15% 5%;
+    text-transform: uppercase;
+}
+
+.item__titulo {
+    text-align: left;
+}
+
+.item__dato {
+    font-family: var(--fontPrincipalAlternativo);
+}
+
+.item__enlace {
+    text-decoration: none;
+    text-align: center;
+    color: var(--blanco);
+    font-family: var(--fontPrincipal);
+    text-transform: uppercase;
+    padding: 0.5rem;
+    display: block;
+    margin: 0.5rem auto;
+    background-color: var(--negro);
+    border-radius: 25px;
+    width: 90%;
+}
+
+.item__enlace:hover{
+    background-color: var(--primario);
+    color: var(--black);
+}
+
+.acceso__menu {
+    background-image: url(../img/ladupla.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.menu {
+    width: 15%;
+    border: 1px solid white;
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    height: 37rem !important;
+}
+
+.img-1 {
+    background-image: url('../img/topdetopsgaleria1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.img-2 {
+    background-image: url('../img/topdetopsgaleria2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+}
+
+.img-3 {
+    background-image: url('../img/topdetopsgaleria3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+}
+
+.img-banner {
+    height: 100%;
+    width: 100%;
+}
+
+
+.footer {
+    background-color: var(--primario);
+    height: 10rem;
+    display: flex;
+    z-index: 1;
+}
+
+.contenedor-izquierdo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.footer__img {
+    height: 150px;
+}
+
+.datos {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.datos h3 {
+    font-family: var(--fontPrincipal);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.datos p {
+    font-family: var(--fontPrincipalAlternativo);
+}
+
+.contenedor-derecho {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 53%;
+}
+
+.footer_enlace {
+    margin: 1rem;
+}
+
+.footer__enlace--img {
+    height: 40px;
+}
+
+@media(max-width: 1200px) {
+
+    .header {
+        height: 80px;
+    }
+    .enlace {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .item__img {
+        left: 130;
+        top: -30;
+    }
+
+    .acceso__menu {
+        height: 23rem;
+    }
+
+    .menu {
+        margin-bottom: 1rem;
+    }
+
+    .img-2, .img-3 {
+        background-position-y: 40%;
+    }
+
+}
+
+@media(max-width: 860px) {
+
+    .header {
+        height: 60px;
+    }
+
+    .header__logo {
+        margin-left: 1rem;
+        height: 130px;
+    }
+
+    .enlace {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .item {
+        width: 25%;
+        min-height: 90px;
+    }
+
+    .item__img {
+        left: 80;
+        width: 52%;
+        top: -28;
+    }
+
+    .item__titulo {
+        font-size: 0.9rem;
+    }
+
+    .acceso__menu {
+        background-image: url('../img/vasoconcroisant.jpg');
+        height: 27rem;
+    }
+
+    .carousel {
+        height: 25rem !important;
+    }
+
+    .datos h3 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .footer_enlace {
+        margin: 0.5rem;
+    }
+}
+
+@media(max-width: 780px) {
+
+    .enlaces {
+        margin-right: 1rem
+    }
+    
+    .datos h3 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .item {
+        width: 30%;
+        min-height: 190px;
+    }
+
+    .item__img {
+        width: 55%;
+        left: 100;
+    }
+
+    .item__datos {
+        margin-left: 0%;
+    }
+
+    .item__titulo {
+        font-size: 1.5rem;
+    }
+
+    .acceso__menu {
+        height: 26rem;
+    }
+
+    .menu {
+        margin: 1rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .header {
+        height: 50px;
+    }
+
+    .header__logo {
+        margin-left: 0.1rem;
+        height: 90px;
+    }
+
+    .enlaces {
+        min-width: 75%;
+    }
+
+    .enlace {
+        padding: 0.2rem;
+        font-size: 0.7rem;
+    }
+
+    .section h1 {
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .item__enlace {
+        width: 80%;
+        font-size: 0.7rem;
+        padding: 0.2rem;
+    }
+
+    .item__titulo {
+        font-size: 0.7rem;
+        margin-bottom: 0;
+    }
+
+    .item {
+        min-height: 80px;
+        padding: 0.5rem;
+    }
+
+    .item__img {
+        left: 55;
+        width: 50%;
+        top: -10;
+    }
+
+    .item__datos {
+        margin-left: 0.5rem;
+    }
+
+    .item__dato {
+        font-size: 0.6rem;
+    }
+
+    .acceso__menu {
+        background-image: url('../img/vasoconcroisant.jpg');
+        height: 13rem;
+    }
+
+    .menu {
+        width: 30%;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel {
+        height: 18rem !important;
+    }
+
+    .footer {
+        height: 7rem;
+    }
+
+    .contenedor-izquierdo {
+        width: 55%;
+    }
+
+    .footer__img {
+        height: 80px;
+    }
+
+    .datos h3 {
+        font-size: 0.9rem;
+    }
+
+    .datos p {
+        font-size: 0.8rem;
+    }
+
+    .contenedor-derecho {
+        padding-right: 20px;
+    }
+
+    .footer_enlace {
+        margin: 0.3rem;
+    }
+
+    .footer__enlace--img {
+        height: 25px;
+    }
+
+}

@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Miniver&family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <title>Espresso Central|Reviews</title>
+</head>
+<body>
+    <header class="header">
+        <img src="img/cafe-icon.png" alt="" class="header__logo">
+        <nav class="enlaces">
+            <a class="enlace" href="locaciones.html">Mapa cafetero</a>
+            <a class="enlace" href="topdetops.html">Top de tops</a>
+            <a class="enlace" href="menu.html">Menú</a>
+            <a class="enlace" href="masquecafe.html">Más que café</a>
+            <a class="enlace" href="blog.php">Blog</a>
+        </nav>
+    </header>
+    
+
+    <section class="contenedor-formulario">
+        <h1>¡Fue un gusto verte!</h1>
+        <form>
+            <div class="contenedor-texto">
+                <h2>1. ¿Nos puedes dar tu número de ticket?<br> Sería muy util para poder mejorar.</h2>
+                <input type="text" name="numeroticket" id="" class="campo-texto ticket">
+            </div>
+            <div class="pregunta">
+              <h2>2. En general, ¿qué tan feliz estás con Espresso Central?</h2>
+              <input type="radio" id="feliz1" name="felicidad" value="10">
+              <label for="feliz1">Súper feliz, ¡me encanta!</label>
+        
+              <input type="radio" id="feliz2" name="felicidad" value="7.5">
+              <label for="feliz2">Bien, todo chido</label>
+        
+              <input type="radio" id="feliz3" name="felicidad" value="5">
+              <label for="feliz3">Meh, podría estar mejor</label>
+        
+              <input type="radio" id="feliz4" name="felicidad" value="2.5">
+              <label for="feliz4">No muy contentx</label>
+        
+              <input type="radio" id="feliz5" name="felicidad" value="0">
+              <label for="feliz5">Nada feliz, necesitamos hablar</label>
+            </div>
+        
+            <div class="pregunta">
+              <h2>3. ¿Qué tanto recomendarías Espresso Central a tus amigxs o familia?</h2>
+              <input type="radio" id="recom1" name="recomendar" value="10">
+              <label for="recom1">Obvio que sí, lo recomiendo siempre</label>
+        
+              <input type="radio" id="recom2" name="recomendar" value="7.5">
+              <label for="recom2">Sí, probablemente</label>
+        
+              <input type="radio" id="recom3" name="recomendar" value="5">
+              <label for="recom3">Mmm... depende</label>
+        
+              <input type="radio" id="recom4" name="recomendar" value="2.5">
+              <label for="recom4">Casi no lo haría</label>
+        
+              <input type="radio" id="recom5" name="recomendar" value="0">
+              <label for="recom5">Nope, ni de chiste</label>
+            </div>
+        
+            <div class="pregunta">
+              <h2>4. ¿Cómo estuvo el servicio la última vez que nos visitaste o pediste algo?</h2>
+              <input type="radio" id="serv1" name="servicio" value="10">
+              <label for="serv1">Increíble, súper atentos</label>
+        
+              <input type="radio" id="serv2" name="servicio" value="7.5">
+              <label for="serv2">Bien, sin quejas</label>
+        
+              <input type="radio" id="serv3" name="servicio" value="5">
+              <label for="serv3">Más o menos</label>
+        
+              <input type="radio" id="serv4" name="servicio" value="2.5">
+              <label for="serv4">Malito, la neta</label>
+            </div>
+
+            <div class="contenedor-texto">
+                <h2>5. ¿Algo más que nos quieras compartir?<br> Somos todo oídos</h2>
+                <textarea name="comentarios"  class="campo-texto"></textarea>
+            </div>
+
+            <div class="contenedor-boton">
+                <button type="submit" class="submit">ENVIAR MI OPINIÓN</button>
+            </div>
+          </form>  
+    </section>
+
+
+    <footer class="footer">
+        <div class="contenedor-izquierdo">
+            <img src="img/cafe-icon.png" alt="" class="footer__img">
+            <div class="datos">
+                <h3>Espresso Central</h3>
+                <p>771 153 2524</p>
+                <p>mustardmoe@gmail.com</p>
+            </div>
+        </div>
+        <div class="contenedor-derecho">
+            <a class="footer_enlace" href="https://www.facebook.com/ESPRESSO.CENTRAL">
+                <img src="img/Facebook-icon.png" alt="" class="footer__enlace--img">
+            </a>
+            <a class="footer_enlace" href="https://www.instagram.com/espressozen/">
+                <img src="img/Instagram-icon.png" alt="" class="footer__enlace--img">
+            </a>
+            <a class="footer_enlace" href="https://x.com/EspressoZen">
+                <img src="img/twitter-icon.png" alt="" class="footer__enlace--img">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking JQuery script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Linking Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- Linking custom script -->
+    <script src="index.js"></script> 
+</body>
+</html>
