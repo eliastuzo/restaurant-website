@@ -36,7 +36,7 @@ A modern, mobile-friendly website built for Espresso Central to serve as a digit
 
 ## 📁 Folder Structure
 
-dropdown
+```
 /espresso/
 ├── css/ # Styling files
 ├── img/ # Images (not uploaded due to GitHub file limits)
@@ -53,6 +53,7 @@ dropdown
 ├── topdetops.html # Gallery
 ├── locaciones.html # Contact & locations
 └── .gitignore # Excludes .env and media folders
+```
 
 ---
 
